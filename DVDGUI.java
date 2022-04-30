@@ -39,7 +39,7 @@ public class DVDGUI implements DVDUserInterface {
 					"Welcome to your DVD Stack!\nPlease Select what you would like to do with your DVDs.",
 					"DVD Collection",
 					JOptionPane.YES_NO_CANCEL_OPTION, JOptionPane.QUESTION_MESSAGE,
-					new ImageIcon("src/images/newStack.png"), commands,
+					new ImageIcon("images/newStack.png"), commands,
 					commands[commands.length - 1]);
 
 			switch (choice) {
@@ -98,23 +98,23 @@ public class DVDGUI implements DVDUserInterface {
 						// dvdlist.addOrModifyDVD(title, myRating, myRunTime);
 
 						if (dvdlist.getRatingByTitle(title).equals("G")) {
-							icon = new ImageIcon("src/images/BlueCD.png");
+							icon = new ImageIcon("images/BlueCD.png");
 						}
 
 						else if (dvdlist.getRatingByTitle(title).equals("PG")) {
-							icon = new ImageIcon("src/images/YellowCD.png");
+							icon = new ImageIcon("images/YellowCD.png");
 						}
 
 						else if (dvdlist.getRatingByTitle(title).equals("PG-13")) {
-							icon = new ImageIcon("src/images/PurpleCD.png");
+							icon = new ImageIcon("images/PurpleCD.png");
 						}
 
 						else if (dvdlist.getRatingByTitle(title).equals("R")) {
-							icon = new ImageIcon("src/images/RedCD.png");
+							icon = new ImageIcon("images/RedCD.png");
 						}
 
 						else {
-							icon = new ImageIcon("src/images/RainbowCD.png");
+							icon = new ImageIcon("images/RainbowCD.png");
 						}
 						String myRating = "";// = ratingField.toString();
 						String myRunTime = "";// = runtimeField.toString();
@@ -236,7 +236,7 @@ public class DVDGUI implements DVDUserInterface {
 		String myMessage = "Total Running Time of DVDs: " + total + "Min";
 
 		JOptionPane.showMessageDialog(null, myMessage, "DVD Runtime", JOptionPane.INFORMATION_MESSAGE,
-				new ImageIcon("src/images/RunningTime.png"));
+				new ImageIcon("images/RunningTime.png"));
 
 	}
 
