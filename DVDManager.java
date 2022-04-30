@@ -11,7 +11,7 @@ public class DVDManager {
 		DVDUserInterface dlInterface;
 		DVDCollection dl = new DVDCollection();
 		
-		dl.loadData("src/dvddata.txt");
+		dl.loadData("dvddata.txt");
 
 		dlInterface = new DVDGUI(dl);
 		dlInterface.processCommands();
